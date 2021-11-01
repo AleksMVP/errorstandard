@@ -16,8 +16,8 @@ func NewErrorWrapper(original error, eType error) ErrorWrapper {
 
 func (instance *ErrorWrapper) Error() string {
 	return fmt.Sprintf(
-		"Original: %v, Type: %v", 
-		instance.Original.Error(), 
+		"Original: %v, Type: %v",
+		instance.Original.Error(),
 		instance.Type.Error(),
 	)
 }
